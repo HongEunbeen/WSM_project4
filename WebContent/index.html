@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>3617 홍은빈 포트폴리오</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/sunny/jquery-ui.css" />
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <!-- <script src="https://maps.google.com/maps/api/js?key=AIzaSyA7nnoG8FxJ8CcMFYcE_isUIH-GUFvu4jA">
+    </script> 최상위 메뉴에서 지도를 사용하면 링크로 연결된 아래메뉴의 지도실행이 중복이 되어 실행이 안됨-->
+    
+    <link rel="stylesheet" href="css/count6.css"/>
+    <script src="js/count6.js"></script>
+    <link rel="stylesheet" href="css/map.css"/>
+    <script src="js/myLoc.js"></script>
+    <script src="js/carlendar.js"></script>
+    <style>
+    .fakeimg {
+        height: 250px;
+        width:100%;
+        background: rgb(202, 227, 228);
+        border-radius: 7px;
+        padding: 10px 15px;
+        margin-top: 10px;
+    }
+    </style>
+    <script>
+    $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();
+       $("#savehtml").click(function() {
+      $("#content").html(createTimeString());
+    });
+    });
+    </script>
+  </head>
+
+  <body>
+      <!--제목-->
+    <div style="margin-top:20px"  align="center">
+      <h4>Bootstrap 4 를 이용한 페이지</h4>
+    </div>
+      <!--메뉴버튼-->
+	<nav class="navbar  bg-primary navbar-dark">
+    <a class="navbar-brand" href="index.html" data-toggle="popover" data-trigger="hover" data-content="초기화면입니다">홈</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html">내소개</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="table.html">강의시간표</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="lecture.html">강의실자료</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="board.html">게시판</a>
+        </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class="container" style="margin-top:30px" >
+    
+      <div class="row">
+        <!--왼쪽내용-->
+          <div class="col-xl-4 col-lg-5">
+           <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">About Me</div>
+			            <font size=3>Photo of me:</font>
+			            <img src="imgs/girl.png" alt="John Doe" class="mr-3 mt-3 Thumbnail" top-magrin: style="width:150px;" >
+			            <h5>홍은빈</h5>
+			         	 메일 정보: <a href="mailto:s2017s40@e-mirim.hs.kr">s2017s40@e-mirim.hs.kr</a>.<p>
+			            <p><p>
+			            <h2>나의 작품</h2>
+			            <ul class="nav nav-pills flex-column">
+			              <li class="nav-item">
+			              <a class="nav-link active" href="calculator.html" data-toggle="popover"  data-content="계산하는프로그램">계산기</a>
+			              </li>
+			              <li class="nav-item">
+			              <a class="dropdown-item" href="midwav.html" data-toggle="popover"  data-content="좋하하는 노래가 실행이 됩니다">오디오실행</a>
+			              </li>
+			              <li class="nav-item">
+			              <a class="dropdown-item" href="video.html" data-toggle="popover"  data-content="비디오가 실행됩니다">비디오실행</a>
+			              </li>
+			              <li class="nav-item">
+			              <a class="dropdown-item" href="jquery1/jquery1.html" data-toggle="popover"  data-content="jquery로 작성된 달력입니다. 좋아하는 사진으로 바꾸어보세요">사진이동</a>
+			              </li>
+			              <li class="nav-item">
+			              <a class="dropdown-item" href="jquery2/sunny.html" data-toggle="popover"  data-content="jquery로 작성된 달력입니다">달력</a>
+			              </li>
+			              <li class="nav-item">
+			              <a class="dropdown-item" href="map1/m_myLoc.html" data-toggle="popover"  data-content="jquery mobile를 이용한 위치추적기 입니다">위치추적기-jquery</a>        
+			              </li>
+			              <li class="nav-item">
+			              <a class="dropdown-item" href="map2/m_myLoc.html" data-toggle="popover" data-content="bootstrap를 이용한 위치추적기 입니다">위치추적기-boot</a>
+			              </li>
+			              <li class="nav-item">
+			              <a class="dropdown-item" href="subway/subway.html" data-toggle="popover"  data-content="가까운 지하철 안내 입니다">가까운 지하철 안내</a>
+			              </li>
+			              <li class="nav-item">
+			                  <a class="dropdown-item" href="parking/parking.html" data-toggle="popover"  data-content="가까운 주차장 안내 입니다">가까운 주차장 안내</a>
+			              </li>
+			              <li class="nav-item">
+			                  <a class="dropdown-item" href="#" data-toggle="popover"  data-content="예제프로그램을 추가하세요">Disabled</a>
+			              </li>
+			              <li class="nav-item">
+			                  <a class="dropdown-item" href="#" data-toggle="popover"  data-content="예제프로그램을 추가하세요">Disabled</a>
+			              </li>
+			              <li class="nav-item">
+			                  <a class="dropdown-item" href="#" data-toggle="popover"  data-content="예제프로그램을 추가하세요">Disabled</a>
+			              </li>
+			              <li class="nav-item">
+			                  <a class="dropdown-item" href="#" data-toggle="popover"  data-content="예제프로그램을 추가하세요">Disabled</a>
+			              </li>
+			              <li class="nav-item">
+			                  <a class="dropdown-item" href="#" data-toggle="popover"  data-content="예제프로그램을 추가하세요">Disabled</a>
+			              </li>
+			              <li class="nav-item">
+			                  <a class="dropdown-item" href="#" data-toggle="popover"  data-content="예제프로그램을 추가하세요">Disabled</a>
+			              </li>
+			              <li class="nav-item">
+			                  <a class="dropdown-item" href="#" data-toggle="popover"  data-content="예제프로그램을 추가하세요">Disabled</a>
+			              </li>
+			              <li class="nav-item">
+			                  <a class="dropdown-item" href="#" data-toggle="popover"  data-content="예제프로그램을 추가하세요">Disabled</a>
+			              </li>
+			              <li class="nav-item">
+			                  <a class="dropdown-item" href="#" data-toggle="popover"  data-content="예제프로그램을 추가하세요">Disabled</a>
+			              </li>
+			              <li class="nav-item">
+			                  <a class="dropdown-item" href="#" data-toggle="popover"  data-content="예제프로그램을 추가하세요">Disabled</a>
+			              </li>
+			            </ul>
+			          </div>
+                    </div>
+             
+                  </div>
+                </div>
+              </div>
+             <!--Counter-->
+	         <div class="col-xl-4 col-lg-5">
+	              <div class="card border-left-primary shadow h-100 py-2">
+	                <div class="card-body">
+	                  <div class="row no-gutters align-items-center">
+	                    <div class="col mr-2">
+	                      <div class="h5 mb-0 font-weight-bold text-gray-800">Counter</div>
+				            <font size=3>기준일 : 2019.12.31</font>
+				            <div class="cover">
+				             <p>&nbsp;</p>
+				             <h4>COMING SOON</h4>
+				             <p id="count"></p>
+				            </div>
+				            <div class="fakeimg">
+				              <p>하루의 시간 ..</p>
+				              <p>
+						                오늘 하루는 <br>
+						                내 생애의 축소판.  <br>
+						                아침에 눈을 떠서 저녁에 잠잘 때까지 <br> 
+						                하루 종일 희망을 말하는 사람,  <br>
+						                그게 나였으면 좋겠습니다.<br>
+						                (권대웅·시인)<br>
+					         </div>
+				            <br>
+	                    </div>	                    
+	                  </div>
+	                </div>
+	              </div>
+	            </div>   
+<!--Calendar-->
+	         <div class="col-xl-4 col-lg-5">
+	              <div class="card border-left-primary shadow h-100 py-2">
+	                <div class="card-body">
+	                  <div class="row no-gutters align-items-center">
+	                    <div class="col mr-2">
+	                      <div class="h5 mb-0 font-weight-bold text-gray-800">My Calendar</div>
+			              <font size=3>오늘의 날짜입니다</font>
+			              <div id="datepicker" align="center" ></div>
+			              <div class="fakeimg"> 
+			              		달력 
+						                  달력 속에는 
+						                  숫자들이 가지런히 
+						                  놓여 있어요.<br>
+						                  
+						                  하루하루 지나 한 달이 되어 
+						                  한 장을 넘기다 보면 
+						                  계절에 맞춰 
+						                  예쁜 그림도 바뀌지요. <br>
+						                  
+						                  새 달력이 나오면 
+						                  먼저 기념일에다 
+						                  동그라미를 넣고 
+						                  공휴일도 세어요. 
+						                  
+						                  해마다 
+						                  반복되는 
+						                  숫자들의 배열 
+						                  우리네 인생이에요.<br>
+						                  (이제민·시인)
+			              </div>
+	                    </div>
+	                  </div>
+	                </div>
+	              </div>
+	            </div>   
+
+	 </div><!-- row -->
+	 
+	 <div class="row">
+         <div class="col-xl-4 col-lg-5">
+           <!-- Project Card Example -->
+           <div class="card shadow mb-4">
+             	<div class="card-header py-3">
+              	 	<h6 class="m-0 font-weight-bold text-primary">Projects</h6>
+             	</div>
+             	<div class="card-body">
+               		<h4 class="small font-weight-bold">Server Migration <span class="float-right">20%</span></h4>
+              		<div class="progress mb-4">
+                	 <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+              	</div>
+               	<h4 class="small font-weight-bold">Sales Tracking <span class="float-right">40%</span></h4>
+              	<div class="progress mb-4">
+                 	<div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+              	</div>
+               	<h4 class="small font-weight-bold">Customer Database <span class="float-right">60%</span></h4>
+               	<div class="progress mb-4">
+                 	<div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+               	</div>
+               	<h4 class="small font-weight-bold">Payout Details <span class="float-right">80%</span></h4>
+               	<div class="progress mb-4">
+                	 <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+               	</div>
+               	<h4 class="small font-weight-bold">Account Setup <span class="float-right">Complete!</span></h4>
+               	<div class="progress">
+                	 <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+               	</div>
+             </div>
+           </div>
+         </div>
+         <!-- Pie Chart -->
+            <div class="col-xl-4 col-lg-5">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
+                  <div class="dropdown no-arrow">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Dropdown Header:</div>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-pie pt-4 pb-2">
+                    <canvas id="myPieChart"></canvas>
+                  </div>
+                  <div class="mt-4 text-center small">
+                    <span class="mr-2">
+                      <i class="fas fa-circle text-primary"></i> Direct
+                    </span>
+                    <span class="mr-2">
+                      <i class="fas fa-circle text-success"></i> Social
+                    </span>
+                    <span class="mr-2">
+                      <i class="fas fa-circle text-info"></i> Referral
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+      </div><!-- row -->
+         
+         
+              
+      </div>
+  </body>
+</html>
