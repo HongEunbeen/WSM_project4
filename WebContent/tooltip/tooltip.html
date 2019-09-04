@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> JQuery Animation</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/sunny/jquery-ui.css" />
+<script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+</head>
+<script>
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover();   
+        });
+        </script>
+<body>
+    
+    <h4>네가지 방향</h4>
+    
+    <div class="bs-docs-example tooltip-demo" style="margin: 200px">
+        <button type="button"  class="btn btn-outline-primary" data-toggle="popover" data-placement="top" data-content="봄날의 기억" title="위쪽 팝오버">위쪽 팝오버</button>
+        <button type="button"  class="btn btn-outline-primary"  data-toggle="popover" data-placement="right" data-content="집으로 가는길" title="오른쪽 팝오버">오른쪽 팝오버</button>
+        <button type="button"  class="btn btn-outline-primary"  data-toggle="popover" data-placement="bottom" data-content="괜찮아요" title="아래쪽 팝오버">아래쪽 팝오버</button>
+        <button type="button"  class="btn btn-outline-primary" data-toggle="popover" data-placement="left" data-content="뛰뛰빵빵" title="왼쪽 팝오버">왼쪽 팝오버</button>
+    </div>
+    <center>
+        <button type="button"  class="btn btn-outline-primary"><a href="../index.html">HOME</a></button>
+    </center>
+</body>
+</html>
